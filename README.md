@@ -8,9 +8,9 @@ The idea is to create a fully functional, completely open source Contextual RAG 
 Right know I made a few tweaks in the example code from Anthropic post about Contextual RAG.
 The most important is a swap to open source tools:
 
-1. **Model creating context:**                    &#9 &#9**Anthropic Claude**  ->   **Ollama/llama3.1**(sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it. Because of that sometimes created context is wrong or incomplete/empty)
-2. **Model creating embeddings:**                 &#9 &#9**VoyageAI**  ->  **all-mpnet-base-v2** (used with chromadb vector database)
-3. **Model for reranking search results:**        &#9 &#9**Cohere**  ->  **Flashrank**
+1. **Model creating context:** &#9;&#9;**Anthropic Claude**  ->   **Ollama/llama3.1**(sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it. Because of that sometimes created context is wrong or incomplete/empty)
+2. **Model creating embeddings:**                 **VoyageAI**  ->  **all-mpnet-base-v2** (used with chromadb vector database)
+3. **Model for reranking search results:**        **Cohere**  ->  **Flashrank**
 
 The code allows currently only to evaluate the whole approach on the data prepared by anthropic.
 
@@ -30,17 +30,17 @@ VectorDB (only semantic search):<br>
 Pass@5: 63.76%<br>
 Pass@20: 79.66%<br>
 
-ContextualVectorDB:
-Pass@5: 69.84%
-Pass@20: 83.13%
+ContextualVectorDB:<br>
+Pass@5: 69.84%<br>
+Pass@20: 83.13%<br>
 
-ContextualVectorDB + BM25 (adding BM25 creates Hybrid Search):
-Pass@5: 76.53%
-Pass@20: 87.37%
+ContextualVectorDB + BM25 (adding BM25 creates Hybrid Search):<br>
+Pass@5: 76.53%<br>
+Pass@20: 87.37%<br>
 
-ContextualVectorDB + BM25 + Reranker:
-Pass@5: 81.32%
-Pass@20: 90.83%
+ContextualVectorDB + BM25 + Reranker:<br>
+Pass@5: 81.32%<br>
+Pass@20: 90.83%<br>
 
 ## References
 https://github.com/anthropics/anthropic-cookbook/blob/main/skills/contextual-embeddings/guide.ipynb
