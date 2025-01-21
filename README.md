@@ -8,9 +8,9 @@ The idea is to create a fully functional, completely open source Contextual RAG 
 Right know I made a few tweaks in the example code from Anthropic post about Contextual RAG.
 The most important is a swap to open source tools:
 
-1. Model creating context:                    Anthropic Claude  ->   Ollama/llama3.1 (sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it)
-2. Model creating embeddings:                 VoyageAI  ->  all-mpnet-base-v2 (used with chromadb vector database)
-3. Model for reranking search results:        Cohere  ->  Flashrank
+1. **Model creating context:**                    **Anthropic Claude**  ->   **Ollama/llama3.1 **(sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it)
+2. **Model creating embeddings:**                 **VoyageAI**  ->  **all-mpnet-base-v2** (used with chromadb vector database)
+3. **Model for reranking search results:**        **Cohere**  ->  **Flashrank**
 
 The code allows currently only to evaluate the whole approach on the data prepared by anthropic.
 
@@ -21,7 +21,7 @@ The code allows currently only to evaluate the whole approach on the data prepar
 4. Download Docker and set it up.
 5. Open Docker Desktop
 6. In cmd type: docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.8.0
-7. Good to go. Let's evaluate it!
+7. Good to go. Let's evaluate the retrieving capabilities!
 
 ## References
 https://github.com/anthropics/anthropic-cookbook/blob/main/skills/contextual-embeddings/guide.ipynb
