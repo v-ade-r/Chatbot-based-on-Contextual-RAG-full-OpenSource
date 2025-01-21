@@ -1,0 +1,16 @@
+VectorDB(only semantic search):
+Pass@5: 63.76%
+Pass@20: 79.66%
+
+ContextualVectorDB:
+Pass@5: 69.84%
+Pass@20: 83.13%
+
+ContextualVectorDB + BM25 (adding BM25 creates Hybrid Search):
+Pass@5: 76.53%
+Pass@20: 87.37%
+
+ContextualVectorDB + BM25 + Reranker:
+Pass@5: 81.32%
+Pass@20: 90.83%
+
