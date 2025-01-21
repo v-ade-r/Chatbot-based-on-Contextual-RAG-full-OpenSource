@@ -8,11 +8,11 @@ The idea is to create a fully functional, completely open source Contextual RAG 
 Right know I made a few tweaks in the example code from Anthropic post about Contextual RAG.
 The most important is a swap to open source tools:
 
-1. **Model creating context:** <br>
-**Anthropic Claude**  ->   **Ollama/llama3.1**(sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it. Because of that sometimes created context is wrong or incomplete/empty)
-3. **Model creating embeddings:** <br>
+1. Model creating context: <br>
+**Anthropic Claude**  ->   **Ollama/llama3.1** (sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it. Because of that sometimes created context is wrong or incomplete/empty)
+3. Model creating embeddings: <br>
 **VoyageAI**  ->  **all-mpnet-base-v2** (used with chromadb vector database)
-4. **Model for reranking search results:** <br>
+4. Model for reranking search results: <br>
 **Cohere**  ->  **Flashrank**
 
 The code allows currently only to evaluate the whole approach on the data prepared by anthropic.
