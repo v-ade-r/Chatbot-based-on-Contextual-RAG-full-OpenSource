@@ -8,9 +8,9 @@ The idea is to create a fully functional, completely open source Contextual RAG 
 Right know I made a few tweaks in the example code from Anthropic post about Contextual RAG.
 The most important is a swap to open source tools:
 
-1. **Model creating context:**                    **Anthropic Claude**  ->   **Ollama/llama3.1 **(sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it. Because of that sometimes created context is wrong or incomplete/empty)
-2. **Model creating embeddings:**                 **VoyageAI**  ->  **all-mpnet-base-v2** (used with chromadb vector database)
-3. **Model for reranking search results:**        **Cohere**  ->  **Flashrank**
+1. **Model creating context:**                    &#9 &#9**Anthropic Claude**  ->   **Ollama/llama3.1**(sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it. Because of that sometimes created context is wrong or incomplete/empty)
+2. **Model creating embeddings:**                 &#9 &#9**VoyageAI**  ->  **all-mpnet-base-v2** (used with chromadb vector database)
+3. **Model for reranking search results:**        &#9 &#9**Cohere**  ->  **Flashrank**
 
 The code allows currently only to evaluate the whole approach on the data prepared by anthropic.
 
@@ -26,9 +26,9 @@ The code allows currently only to evaluate the whole approach on the data prepar
 ## **Retrieval evaluation** 
 I evaluated the retrieving accuracy at each stage. Pass@n - describes accuracy of getting 'golden chunk' (ideal chunk consisting of the most appropriate knowledge for the query) i top-n (top5 and top20) retrieved chunks.
 
-VectorDB (only semantic search):
-Pass@5: 63.76%
-Pass@20: 79.66%
+VectorDB (only semantic search):<br>
+Pass@5: 63.76%<br>
+Pass@20: 79.66%<br>
 
 ContextualVectorDB:
 Pass@5: 69.84%
