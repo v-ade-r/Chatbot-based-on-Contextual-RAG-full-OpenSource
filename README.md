@@ -15,7 +15,7 @@ The most important is a swap to open source tools:
 4. Model for reranking search results: <br>
 **Cohere**  ->  **Flashrank**
 
-The code allows currently only to evaluate the whole approach on the data prepared by anthropic.
+The current code is capable of evaluating the approach using data structurized like the data prepared by Anthropic.
 
 ## **Usage tips**
 1. Download and install Ollama
@@ -27,7 +27,7 @@ The code allows currently only to evaluate the whole approach on the data prepar
 7. Good to go. Let's evaluate the retrieving capabilities!
 
 ## **Retrieval evaluation** 
-I evaluated the retrieving accuracy at each stage. Pass@n - describes accuracy of getting 'golden chunk' (ideal chunk consisting of the most appropriate knowledge for the query) i top-n (top5 and top20) retrieved chunks.
+I evaluated the retrieving accuracy at each stage. Pass@n - represents the accuracy of getting the 'golden chunk' (most relevant chunk for the query) within the top-n (top5 and top20) retrieved chunks.
 
 VectorDB (only semantic search):<br>
 Pass@5: 63.76%<br>
