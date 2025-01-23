@@ -14,3 +14,8 @@ ContextualVectorDB + BM25 + Reranker:
 Pass@5: 81.32%
 Pass@20: 90.83%
 
+------------------
+(Context created by GPT-4o-mini)
+Contextual + BM25 + reranker:
+Pass@5: 81.99%
+Pass@20: 93.75%
