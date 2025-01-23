@@ -45,5 +45,11 @@ ContextualVectorDB + BM25 + Reranker:<br>
 Pass@5: 81.32%<br>
 Pass@20: 90.83%<br>
 
+------------------
+(Context created by GPT-4o-mini)<br>
+Contextual + BM25 + reranker:<br>
+Pass@5: 81.99%<br>
+Pass@20: 93.75%<br>
+
 ## References
 https://github.com/anthropics/anthropic-cookbook/blob/main/skills/contextual-embeddings/guide.ipynb
