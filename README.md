@@ -5,9 +5,7 @@ Chatbot with Conversation History Awareness based on Contextual RAG with Hybrid 
 The idea is to create a fully functional, completely open source Contextual RAG with Hybrid Search and Reranking application.
 
 ## Some idea and code explanations 
-# ToDo
-
-The current code is capable of evaluating the approach using data structurized like the data prepared by Anthropic.
+<Todo>
 
 ## **Usage tips**
 1. Download and install Ollama
@@ -19,6 +17,8 @@ The current code is capable of evaluating the approach using data structurized l
 7. Good to go. Let's evaluate the retrieving capabilities running evaluate.py!
 
 ## **Retrieval evaluation** 
+The current code is capable of evaluating the approach using data structurized like the data prepared by Anthropic.
+
 I evaluated the retrieving accuracy at each stage. Pass@n - represents the accuracy of getting the 'golden chunk' (most relevant chunk for the query) within the top-n (top5 and top20) retrieved chunks.
 
 VectorDB (only semantic search):<br>
