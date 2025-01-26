@@ -1,19 +1,11 @@
-# Contextual-RAG-full-OpenSource
-Contextual RAG with Hybrid Search and Reranking, full OpenSource.
+# Chatbot based on Contextual RAG with Hybrid Search
+Chatbot with Conversation History Awareness based on Contextual RAG with Hybrid Search and Reranking, fully OpenSource.
 
 ## **Justification of this code**
 The idea is to create a fully functional, completely open source Contextual RAG with Hybrid Search and Reranking application.
 
-## **Current project situation**
-Right know I made a few tweaks in the example code from Anthropic post about Contextual RAG.
-The most important is a swap to open source tools:
-
-1. Model creating context: <br>
-**Anthropic Claude**  ->   **Ollama/llama3.1** (sometimes input exceeds context length, because of the default number set by Ollama - I have to try to change it. Because of that sometimes created context is wrong or incomplete/empty)
-3. Model creating embeddings: <br>
-**VoyageAI**  ->  **all-mpnet-base-v2** (used with chromadb vector database)
-4. Model for reranking search results: <br>
-**Cohere**  ->  **Flashrank**
+## Some idea and code explanations 
+# ToDo
 
 The current code is capable of evaluating the approach using data structurized like the data prepared by Anthropic.
 
@@ -24,7 +16,7 @@ The current code is capable of evaluating the approach using data structurized l
 4. Download Docker and set it up.
 5. Open Docker Desktop
 6. In cmd type: docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.8.0
-7. Good to go. Let's evaluate the retrieving capabilities!
+7. Good to go. Let's evaluate the retrieving capabilities running evaluate.py!
 
 ## **Retrieval evaluation** 
 I evaluated the retrieving accuracy at each stage. Pass@n - represents the accuracy of getting the 'golden chunk' (most relevant chunk for the query) within the top-n (top5 and top20) retrieved chunks.
