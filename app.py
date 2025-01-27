@@ -22,10 +22,10 @@ Path(UPLOAD_FOLDER).mkdir(parents=True, exist_ok=True)
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     global db, es_bm25, last_summary
     last_summary = ""
-    with open('data/test_chunks_trimmed2.json', 'r', encoding='utf-8') as f:
+    with open('data/codebase_chunks.json', 'r', encoding='utf-8') as f:
         transformed_dataset = json.load(f)
 
-    db = ContextualVectorDB("my_contextual_db_final_test2")
+    db = ContextualVectorDB("my_contextual_db")
     db.load_data(transformed_dataset)
     es_bm25 = create_elasticsearch_bm25_index(db)
     yield
