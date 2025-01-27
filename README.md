@@ -15,6 +15,7 @@ Todo
 5. Open Docker Desktop
 6. In cmd type: docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "xpack.security.enabled=false" elasticsearch:8.8.0
 7. Good to go. Let's evaluate the retrieving capabilities running evaluate.py!
+8. Or run the app.py and use it. I would suggest you to trimm this codebase json to only a few chunks, create a database and upload your pdf to test the app. Remember to change the name of the database!!
 
 ## **Retrieval evaluation** 
 The current code is capable of evaluating the approach using data structurized like the data prepared by Anthropic.
