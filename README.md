@@ -5,6 +5,7 @@ Chatbot with Conversation History Awareness based on Contextual RAG with Hybrid 
 The idea was to create a fully functional, completely open source Contextual RAG with Hybrid Search and Reranking application.
 
 ## Some idea and code explanations 
+Front is tragic, but I don't really care, because it's not a front project.
 Todo
 
 ## **Usage tips**
